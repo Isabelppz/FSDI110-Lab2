@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\Night Owl\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\Night Owl\\.nuget\\packages"
+    ]
+  }
+}
