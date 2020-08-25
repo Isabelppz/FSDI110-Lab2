@@ -36,3 +36,6 @@ F:\Documentos\FSDI Cohort\110\Session 2\ERP\obj\Debug\netcoreapp3.1\ERP.pdb
 F:\Documentos\FSDI Cohort\110\Session 2\ERP\obj\Debug\netcoreapp3.1\ERP.genruntimeconfig.cache
 F:\Documentos\FSDI Cohort\110\Session 2\ERP\obj\Debug\netcoreapp3.1\ERP.csproj.CopyComplete
 F:\Documentos\FSDI Cohort\110\Session 2\ERP\obj\Debug\netcoreapp3.1\Razor\Views\Message\SayHello.cshtml.g.cs
+F:\Documentos\FSDI Cohort\110\Session 2\ERP\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
+F:\Documentos\FSDI Cohort\110\Session 2\ERP\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\index.cshtml.g.cs
+F:\Documentos\FSDI Cohort\110\Session 2\ERP\obj\Debug\netcoreapp3.1\Razor\Views\Catalog\Register.cshtml.g.cs

@@ -1,0 +1,120 @@
+@{
+    ViewData["Title"] = "Register New Car";
+}
+
+@*
+make
+model
+year
+color
+price
+mileage
+condition (new)used
+image
+seats
+MPG
+
+*@
+
+<div class="col-md-6 offset-md-3">
+
+<form>
+    <h3>Register New Car</h3>
+    <form>
+  <div class="form-group row">
+    <label for="selCondition" class="col-4 col-form-label">Condition</label> 
+    <div class="col-8">
+      <select id="selCondition" name="selCondition" class="custom-select">
+        <option value="New">New</option>
+        <option value="Used">Used</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="txtColor" class="col-4 col-form-label">Make</label> 
+    <div class="col-8">
+      <input id="txtColor" name="txtColor" type="text" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="txtModel" class="col-4 col-form-label">Model</label> 
+    <div class="col-8">
+      <input id="txtModel" name="txtModel" type="text" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="txtYear" class="col-4 col-form-label">Year</label> 
+    <div class="col-8">
+      <input id="txtYear" name="txtYear" type="number" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="txtColor" class="col-4 col-form-label">Color</label> 
+    <div class="col-8">
+      <input id="txtColor" name="txtColor" type="text" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="txtPrice" class="col-4 col-form-label">Price</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <div class="input-group-text">
+            <i class="fa fa-dollar"></i>
+          </div>
+        </div> 
+        <input id="txtPrice" name="txtPrice" type="number" class="form-control"> 
+        <div class="input-group-append">
+          <div class="input-group-text">USD</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="txtMileage" class="col-4 col-form-label">Mileage</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <input id="txtMileage" name="txtMileage" type="number" class="form-control"> 
+        <div class="input-group-append">
+          <div class="input-group-text">mi</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="txtMPG" class="col-4 col-form-label">MPG</label> 
+    <div class="col-8">
+      <div class="input-group">
+        <input id="txtMPG" name="txtMPG" type="number" class="form-control"> 
+        <div class="input-group-append">
+          <div class="input-group-text">mi</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="txtImage" class="col-4 col-form-label">Image URL</label> 
+    <div class="col-8">
+      <input id="txtImage" name="txtImage" type="text" class="form-control">
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="txtSeats" class="col-4 col-form-label">Seats</label> 
+    <div class="col-8">
+      <input id="txtSeats" name="txtSeats" type="number" class="form-control">
+    </div>
+  </div> 
+  <div class="form-group row">
+    <div class="offset-4 col-8">
+      <button name="submit" type="button" class="btn btn-primary">
+          <i class="fa fa-save"></i>
+          Register Car
+          </button>
+    </div>
+  </div>
+</form>
+</form>
+
+</div>
+
+

@@ -6,6 +6,7 @@
     <title>@ViewData["Title"] - ERP</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -22,6 +23,12 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Catalog" asp-action="Index">Catalog</a>
+                        </li>
+                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Catalog" asp-action="Register">Register Car</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
@@ -32,6 +39,7 @@
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
+            
         </main>
     </div>
 
