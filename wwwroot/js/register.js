@@ -56,7 +56,19 @@ function registerCar(){
     var car = new Car (make,model,yearNum,color,priceNum,mileageNum,mpgNum,image,seatsNum,condition);
     console.log(car);
 
-    //send string to ajax req
+    //send object on AJAX req
+    $.ajax({
+        url:'/catalog/saveCar',
+        type:'POST',
+        contentType: 'application/json',
+        data: JSON.stringify(car),
+        success: function(res) {
+            console.log("Server responded", res);
+        },
+        error: function(detail){
+            console.log("Error on request", detail);
+        }
+    })
 }
 
 function init(){
