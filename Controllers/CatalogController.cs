@@ -11,8 +11,17 @@ namespace ERP.Controllers
 {
 public class CatalogController : Controller
 {
-    // /catalog/index
-    // /catalog
+    private DataContext dbContext;
+
+    //public CatalogController(){}
+    public CatalogController(DataContext context) 
+        {
+            //public CatalogController(){}
+            dbContext = context;
+        }
+
+        // /catalog/index
+        // /catalog
 
     public IActionResult Index() {
         return View();
@@ -29,23 +38,20 @@ public class CatalogController : Controller
         System.Console.WriteLine("Saving new car");
         System.Console.WriteLine(car.Make);
 
-        car.Id = 1;
+        // save car to DB
+        dbContext.Cars.Add(car);
+        dbContext.SaveChanges();
+
+        //car.Id = 1;
         return Json(car);
         }
 
     [HttpGet]
     public IActionResult GetCatalog(){
         // read list from the DB 
-        // send the list of cars
-
-        List<Car> cars = new List<Car>();
-        var c1 = new Car();
-        c1.Make ="VW";
-        c1.Model = "Karmann Ghia";
-        c1.Year = 1980;
-
-        cars.Add(c1);
-
+        var cars = dbContext.Cars.ToList();
+        
+       // send the list of cars
         return Json(cars);
         }
     }
